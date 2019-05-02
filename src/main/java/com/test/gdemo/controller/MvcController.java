@@ -15,6 +15,7 @@ public class MvcController {
 	
 	@GetMapping("/custom")
 	public ResponseEntity<String> getCustom(){
+		String msg="New Message";
 		return new ResponseEntity<String>("Custom Gradle Build !!!", HttpStatus.OK);
 	}
 }
